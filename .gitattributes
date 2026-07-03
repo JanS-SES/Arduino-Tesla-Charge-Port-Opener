@@ -1,0 +1,7 @@
+* text=auto
+
+*.png binary
+*.wav binary
+*.xls binary
+*.mat binary
+*.exe binary

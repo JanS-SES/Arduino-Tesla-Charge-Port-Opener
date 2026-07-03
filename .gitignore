@@ -1,0 +1,19 @@
+# OS/editor noise
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+
+# Arduino build artifacts
+build/
+*.elf
+*.bin
+*.map
+*.eep
+
+# Logs and temporary files
+*.log
+*.tmp
+*.bak
+*.swp

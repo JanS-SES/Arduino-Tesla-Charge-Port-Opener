@@ -1,0 +1,28 @@
+Short version of this guide:
+https://gist.github.com/Ircama/22707e938e9c8f169d9fe187797a2a2c
+
+Install the Digispark drivers and Arduino board package:
+https://digistump.com/wiki/digispark/tutorials/connecting
+
+This folder contains old micronucleus bootloader files that can remove the
+default Digispark startup delay. Keep this as an archived reference only.
+
+Steps used for the old setup:
+
+1. Copy the files from this folder to C:\.
+2. Open a Windows command prompt.
+3. Change to C:\.
+4. Run:
+
+   micronucleus --run micronucleus-1.11-entry-ext-reset-upgrade.hex
+
+5. Connect the Digispark to USB when prompted.
+6. If the update succeeds, wait about 20 seconds and disconnect it.
+7. Open the Arduino sketch, select the Digispark board and press Upload.
+8. When prompted to connect the Digispark:
+   - connect PB5/RESET to GND,
+   - plug in USB,
+   - disconnect the PB5/RESET jumper again,
+   - wait until the sketch upload completes.
+
+After this, the Digispark should start the sketch immediately on every boot.
